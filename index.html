@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <title>کارت ویزیت عرفان عبادی</title>
+    <link href="https://fonts.googleapis.com/css2?family=Lalezar&display=swap" rel="stylesheet">
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: 'Lalezar', cursive;
+            background-color: #000;
+            color: #90ee90;
+            text-align: center;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        img {
+            border-radius: 50%;
+            width: 150px;
+            height: 150px;
+            margin-top: 20px;
+        }
+        h1 {
+            font-size: 2.5em;
+            margin: 10px 0;
+        }
+        a {
+            font-size: 1.2em;
+            color: #90ee90;
+            text-decoration: none;
+            margin: 5px 0;
+        }
+        .form-section {
+            margin-top: 30px;
+        }
+        input {
+            margin: 10px auto;
+            display: block;
+            padding: 10px;
+            width: 80%;
+            max-width: 300px;
+            border: 1px solid #90ee90;
+            background-color: #111;
+            color: #90ee90;
+            border-radius: 10px;
+        }
+        button {
+            margin-top: 10px;
+            background-color: #25D366;
+            color: #fff;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 50px;
+            font-size: 1em;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            cursor: pointer;
+        }
+        button img {
+            width: 20px;
+            height: 20px;
+            margin-left: 10px;
+        }
+    </style>
+</head>
+<body>
+    <img src="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wCEAAkGBxISEhUTEhMWFhUXFxgYFxcXGRcXFxgXGBcXFxgYHSggGBolHRgXITEhJSkrLi4uFx8zODMtNygtLisBCgoKDA0OGxAQGy0lICYtLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLf/AABEIALcBEwMBIgACEQEDEQH/xAAcAAABBQEBAQAAAAAAAAAAAAAFAAMEBgcCAQj/" alt="Profile Image" />
+    <h1>عرفان عبادی</h1>
+    <a href="tel:09212982911">۰۹۲۱۲۹۸۲۹۱۱</a>
+    <a href="https://wa.me/989212982911" target="_blank">واتساپ</a>
+    <a href="https://t.me/mrerfanebadi" target="_blank">تلگرام</a>
+    <a href="https://instagram.com/eneivl" target="_blank">اینستاگرام</a>
+    <a href="https://www.google.com/maps/place/@/data=!4m2!3m1!1s0x3f920685817b3c6b:0xed87611b0b224792" target="_blank">لوکیشن</a>
+    <a href="https://docs.google.com/forms/d/e/1FAIpQLSfkf0Ub4tCw-ysY375--BPMlNWqOzv29KcNWQFOFIkb-gK_7A/viewform?usp=header" target="_blank">فرم اطلاعات شما</a>
+
+    <div class="form-section">
+        <input type="text" id="form_name" placeholder="من، ... هستم">
+        <input type="text" id="form_phone" placeholder="شماره تماس">
+        <input type="text" id="form_instagram" placeholder="آیدی اینستاگرام">
+        <button onclick="sendWhatsApp()">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" alt="WhatsApp Icon">
+            ارسال در واتساپ
+        </button>
+    </div>
+
+    <script>
+        function sendWhatsApp() {
+            const name = document.getElementById('form_name').value;
+            const phone = document.getElementById('form_phone').value;
+            const instagram = document.getElementById('form_instagram').value;
+            const message = `سلام عرفان جان%0Aمن ${name} هستم%0Aشماره تماس: ${phone}%0Aآیدی اینستاگرام: ${instagram}`;
+            const url = `https://wa.me/989212982911?text=${message}`;
+            window.open(url, '_blank');
+        }
+    </script>
+</body>
+</html>
