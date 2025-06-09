@@ -1,92 +1,156 @@
-
 <!DOCTYPE html>
 <html lang="fa" dir="rtl">
 <head>
-  <meta charset="UTF-8">
-  <title>کارت ویزیت دیجیتال</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>عرفان عبادی</title>
   <link href="https://fonts.googleapis.com/css2?family=Lalezar&display=swap" rel="stylesheet">
   <style>
     body {
       margin: 0;
-      background-color: black;
-      color: #00FF84;
-      font-family: 'Lalezar', cursive;
+      background-color: #000;
+      font-family: 'Lalezar', sans-serif;
+      color: #00FF7F;
       text-align: center;
-      padding: 30px 10px;
     }
 
-    .profile-pic {
-      width: 140px;
-      height: 140px;
+    .profile-img {
+      width: 150px;
+      height: 150px;
       border-radius: 50%;
-      border: 4px solid #00FF84;
-      margin: 20px auto;
-      background-image: url("data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wBDAAgGBgcGBQgHBwcJCQgKDBQNDAsLDBkSEw8UHRofHh0aH...");
-      background-size: cover;
-      background-position: center;
+      border: 4px solid #00FF7F;
+      object-fit: cover;
+      margin-top: 30px;
     }
 
     h1 {
-      margin: 10px 0 30px;
-      font-size: 26px;
+      font-size: 28px;
+      margin: 10px 0 30px 0;
     }
 
-    .link {
-      margin: 10px 0;
+    .link-item {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 10px;
       font-size: 20px;
+      margin: 10px auto;
+      color: #00FF7F;
+      text-decoration: none;
     }
 
-    .link i {
-      margin-left: 8px;
+    .link-item svg {
+      width: 22px;
+      height: 22px;
+      fill: #00FF7F;
     }
 
     .form-container {
       margin-top: 30px;
     }
 
-    input {
-      display: block;
+    .input-box {
       width: 80%;
       margin: 10px auto;
+      border: 2px solid #00FF7F;
+      border-radius: 12px;
       padding: 10px;
-      border: 2px solid #00FF84;
-      border-radius: 10px;
+      font-family: 'Lalezar', sans-serif;
+      font-size: 18px;
+      text-align: center;
+      color: #00FF7F;
       background-color: transparent;
-      color: #00FF84;
-      font-family: 'Lalezar', cursive;
-      font-size: 16px;
+      outline: none;
     }
 
-    .send-button {
-      background-color: #00FF84;
-      color: black;
-      font-size: 18px;
-      font-family: 'Lalezar', cursive;
-      padding: 12px 30px;
+    .input-box::placeholder {
+      color: #00FF7F;
+      text-align: center;
+    }
+
+    .send-btn {
+      background-color: #00FF7F;
+      color: #000;
+      font-family: 'Lalezar', sans-serif;
+      font-size: 20px;
+      padding: 12px 24px;
       border: none;
-      border-radius: 20px;
+      border-radius: 15px;
       margin-top: 20px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 8px;
       cursor: pointer;
     }
+
+    .send-btn svg {
+      width: 22px;
+      height: 22px;
+      fill: #000;
+    }
   </style>
-  <script src="https://kit.fontawesome.com/af562cdd56.js" crossorigin="anonymous"></script>
 </head>
 <body>
-  <div class="profile-pic"></div>
+
+  <!-- تصویر پروفایل -->
+  <img src="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQEAAAAAAAD..." alt="عرفان عبادی" class="profile-img">
+
+  <!-- نام -->
   <h1>عرفان عبادی</h1>
 
-  <div class="link"><i class="fas fa-phone"></i> شماره تماس</div>
-  <div class="link"><i class="fab fa-whatsapp"></i> واتساپ</div>
-  <div class="link"><i class="fab fa-telegram"></i> تلگرام</div>
-  <div class="link"><i class="fab fa-instagram"></i> اینستاگرام</div>
-  <div class="link"><i class="fas fa-map-marker-alt"></i> لوکیشن من</div>
-  <div class="link"><i class="fas fa-address-card"></i> فرم اطلاعات شما</div>
+  <!-- لینک‌ها -->
+  <a href="tel:09212982911" class="link-item">
+    <svg viewBox="0 0 24 24"><path d="M6.62 10.79a15.91 15.91 0 006.59 6.59l2.2-2.2a1 1 0 011.05-.24 11.72 11.72 0 003.68.59 1 1 0 011 1V20a1 1 0 01-1 1A17 17 0 013 4a1 1 0 011-1h3.5a1 1 0 011 1 11.72 11.72 0 00.59 3.68 1 1 0 01-.24 1.05z"/></svg>
+    شماره تماس
+  </a>
 
+  <a href="https://whatsapp.com/channel/0029VaJmgrrEQIaone0J3a1s" class="link-item">
+    <svg viewBox="0 0 32 32"><path d="M16 0C7.2 0 0 7.2 0 16c0 2.8 0.7 5.5 2 7.9L0 32l8.4-2.2C11 31 13.4 32 16 32c8.8 0 16-7.2 16-16S24.8 0 16 0zM16 29.6c-2.2 0-4.3-0.6-6.1-1.8l-0.4-0.2-5 1.3 1.3-4.9-0.3-0.5c-1.2-1.9-1.8-4-1.8-6.2 0-6.9 5.6-12.4 12.4-12.4S28.4 9.1 28.4 16 22.9 29.6 16 29.6z"/><path d="M23.2 19.7c-0.4-0.2-2.3-1.1-2.7-1.3-0.4-0.2-0.7-0.2-1 0.2s-1.2 1.3-1.5 1.5c-0.3 0.2-0.6 0.2-1 0-0.5-0.2-2.1-0.8-4.1-2.5-1.5-1.3-2.5-3-2.8-3.5-0.2-0.5 0-0.7 0.2-1 0.2-0.2 0.5-0.6 0.7-0.9 0.2-0.3 0.3-0.5 0.5-0.9 0.2-0.4 0.1-0.7 0-0.9s-1-2.4-1.3-3.3c-0.3-0.8-0.7-0.7-1-0.7s-0.6 0-0.9 0C8.4 6.7 7.9 7.2 7.9 8.1c0 0.9 0.6 1.7 0.8 1.9 0.2 0.2 0.3 0.3 0.5 0.3s0.4 0 0.5 0c0.2 0 0.3 0 0.5-0.2 0.1-0.2 0.7-0.9 0.9-1.1 0.2-0.2 0.4-0.3 0.6-0.2s1.3 0.8 2.4 2.2c1 1.3 2.4 3.1 3.6 4.3 1.3 1.2 3.1 2.3 4 2.6 0.9 0.4 1.5 0.4 2.1 0.3 0.6-0.1 1.8-0.8 2-1.4 0.2-0.6 0.2-1.1 0-1.3s-0.3-0.3-0.7-0.5z"/></svg>
+    واتساپ
+  </a>
+
+  <a href="https://t.me/erfanvocal" class="link-item">
+    <svg viewBox="0 0 24 24"><path d="M9.036 15.586L8.75 19.24c.493 0 .708-.211.96-.463l2.304-2.215 4.78 3.492c.874.482 1.497.23 1.723-.8l3.126-14.605c.28-1.285-.487-1.79-1.342-1.5L1.763 9.137C.502 9.624.511 10.378 1.48 10.68l4.804 1.495L18.646 4.91c.457-.301.873-.134.531.167z"/></svg>
+    تلگرام
+  </a>
+
+  <a href="https://instagram.com/eneivl" class="link-item">
+    <svg viewBox="0 0 24 24"><path d="M7.75 2h8.5A5.75 5.75 0 0122 7.75v8.5A5.75 5.75 0 0116.25 22h-8.5A5.75 5.75 0 012 16.25v-8.5A5.75 5.75 0 017.75 2zm0 1.5A4.25 4.25 0 003.5 7.75v8.5A4.25 4.25 0 007.75 20.5h8.5a4.25 4.25 0 004.25-4.25v-8.5A4.25 4.25 0 0016.25 3.5zm8.5 2.25a.75.75 0 11-1.5 0 .75.75 0 011.5 0zM12 7a5 5 0 110 10 5 5 0 010-10zm0 1.5a3.5 3.5 0 100 7 3.5 3.5 0 000-7z"/></svg>
+    اینستاگرام
+  </a>
+
+  <a href="https://www.google.com/maps/place/@/data=!4m2!3m1!1s0x3f920685817b3c6b:0xed87611b0b224792" class="link-item">
+    <svg viewBox="0 0 24 24"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zM7 9c0-2.76 2.24-5 5-5s5 2.24 5 5c0 2.44-2.46 6.64-5 9.88C9.46 15.64 7 11.44 7 9z"/><circle cx="12" cy="9" r="2.5"/></svg>
+    لوکیشن من
+  </a>
+
+  <a href="https://docs.google.com/forms/d/e/1FAIpQLSfkf0Ub4tCw-ysY375--BPMlNWqOzv29KcNWQFOFIkb-gK_7A/viewform?usp=header" class="link-item">
+    <svg viewBox="0 0 24 24"><path d="M3 5h18v2H3zm0 4h12v2H3zm0 4h18v2H3zm0 4h12v2H3z"/></svg>
+    فرم اطلاعات شما
+  </a>
+
+  <!-- فرم واتساپ -->
   <div class="form-container">
-    <input type="text" placeholder="نام و نام خانوادگی">
-    <input type="text" placeholder="شماره تماس">
-    <input type="text" placeholder="آیدی اینستاگرام">
-    <button class="send-button">ارسال در واتساپ</button>
+    <input type="text" class="input-box" placeholder="نام و نام خانوادگی" id="name" />
+    <input type="tel" class="input-box" placeholder="شماره تماس" id="phone" inputmode="numeric" />
+    <input type="text" class="input-box" placeholder="آیدی اینستاگرام" id="insta" />
+    <button class="send-btn" onclick="sendWhatsAppMessage()">
+      <svg viewBox="0 0 32 32"><path d="M16 0C7.2 0 0 7.2 0 16c0 2.8 0.7 5.5 2 7.9L0 32l8.4-2.2C11 31 13.4 32 16 32c8.8 0 16-7.2 16-16S24.8 0 16 0zM16 29.6c-2.2 0-4.3-0.6-6.1-1.8l-0.4-0.2-5 1.3 1.3-4.9-0.3-0.5c-1.2-1.9-1.8-4-1.8-6.2 0-6.9 5.6-12.4 12.4-12.4S28.4 9.1 28.4 16 22.9 29.6 16 29.6z"/></svg>
+      ارسال در واتساپ
+    </button>
   </div>
+
+  <script>
+    function sendWhatsAppMessage() {
+      const name = document.getElementById('name').value.trim();
+      const phone = document.getElementById('phone').value.trim();
+      const insta = document.getElementById('insta').value.trim();
+      const message = `سلام عرفان جان\nمن ${name} هستم\nشماره تماس : ${phone}\nآیدی اینستاگرام : ${insta}`;
+      const url = `https://wa.me/989212982911?text=${encodeURIComponent(message)}`;
+      window.open(url, '_blank');
+    }
+  </script>
+
 </body>
 </html>
