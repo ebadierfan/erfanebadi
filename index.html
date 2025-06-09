@@ -1,119 +1,129 @@
 <!DOCTYPE html>
 <html lang="fa" dir="rtl">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Erfan Profile</title>
-  <link href="https://fonts.googleapis.com/css2?family=Lalezar&display=swap" rel="stylesheet">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>کارت ویزیت عرفان عبادی</title>
+
+  <!-- فونت لاله‌زار -->
+  <link href="https://fonts.googleapis.com/css2?family=Lalezar&display=swap" rel="stylesheet" />
+  <!-- آیکون‌ها از FontAwesome -->
+  <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+
   <style>
     body {
       background-color: #000;
-      color: #00ff88;
       font-family: 'Lalezar', cursive;
+      color: #7CFC00;
       text-align: center;
       margin: 0;
-      padding: 0;
+      padding: 20px;
     }
-
     .profile-img {
       width: 150px;
       height: 150px;
       border-radius: 50%;
-      border: 4px solid #00ff88;
-      margin: 20px auto 10px;
-      background-image: url('data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wBDAAgGBgcGBQgHBwcJCQgKDBQNDAsLDBkSEw8UHRofHh0aHBwgJC4nICIsIxwcKDcpLDAxNDQ0Hyc5PTgyPC4zNDL/2wBDAQkJCQwLDBgNDRgyIRwhMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjL/wAARCAKAAoADASIAAhEBAxEB/8QAHwAAAQUBAQEBAQEAAAAAAAAAAAECAwQFBgcICQoL/8QAtRAAAgEDAwIEAwUF');
-      background-size: cover;
-      background-position: center;
+      border: 3px solid #7CFC00;
+      object-fit: cover;
+      margin: 20px auto;
+      display: block;
     }
-
     h1 {
-      font-size: 28px;
+      font-size: 2rem;
       margin: 10px 0;
     }
-
-    .icon-list {
-      font-size: 20px;
-      line-height: 2;
+    .link-list a {
+      display: block;
+      margin: 10px auto;
+      color: #7CFC00;
+      font-size: 1.2rem;
+      text-decoration: none;
     }
-
-    .icon-list i {
+    .link-list a i {
       margin-left: 10px;
     }
-
-    .form-box {
+    .form-container {
+      margin-top: 30px;
+    }
+    .input-box {
+      border: 2px solid #7CFC00;
+      border-radius: 10px;
+      padding: 10px;
       margin: 10px auto;
       width: 80%;
-      max-width: 300px;
+      font-size: 1.2rem;
+      color: #7CFC00;
       background-color: transparent;
-      border: 2px solid #00ff88;
-      border-radius: 12px;
-      padding: 12px;
-      color: #aaa;
-      font-size: 18px;
       text-align: center;
     }
-
-    .form-box input {
-      background-color: transparent;
-      border: none;
-      outline: none;
-      color: #fff;
+    .input-box::placeholder {
+      color: #7CFC00;
+      opacity: 0.6;
       text-align: center;
-      font-size: 16px;
-      width: 100%;
-      font-family: 'Lalezar', cursive;
     }
-
-    .whatsapp-btn {
-      margin-top: 20px;
-      background-color: #00ff88;
+    .whatsapp-button {
+      background-color: #7CFC00;
       color: #000;
-      font-size: 22px;
-      font-family: 'Lalezar', cursive;
-      padding: 12px 24px;
       border: none;
-      border-radius: 16px;
-      display: inline-flex;
+      border-radius: 10px;
+      padding: 12px 20px;
+      font-size: 1.2rem;
+      font-family: 'Lalezar', cursive;
+      cursor: pointer;
+      display: flex;
+      justify-content: center;
       align-items: center;
-      gap: 10px;
+      margin: 20px auto;
     }
-
-    .whatsapp-btn img {
-      width: 22px;
-      height: 22px;
+    .whatsapp-button i {
+      margin-left: 10px;
+      color: #000;
     }
   </style>
 </head>
 <body>
 
-  <div class="profile-img"></div>
+  <!-- تصویر پروفایل -->
+  <img class="profile-img" src="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wBDAAgGBgcGBQgHBwcJCQgKDBQNDAsLDBkSEw8UHRofHh0aHBwgJC4nICIsIxwcKDcpLDAx..." alt="Erfan Profile" />
+
+  <!-- نام کامل -->
   <h1>عرفان عبادی</h1>
 
-  <div class="icon-list">
-    <div><i>📞</i>شماره تماس</div>
-    <div><i>🟢</i>واتساپ</div>
-    <div><i>✈️</i>تلگرام</div>
-    <div><i>📸</i>اینستاگرام</div>
-    <div><i>📍</i>لوکیشن من</div>
-    <div><i>📋</i>فرم اطلاعات شما</div>
+  <!-- لینک‌ها -->
+  <div class="link-list">
+    <a href="tel:09212982911"><i class="fas fa-phone-alt"></i>شماره تماس</a>
+    <a href="https://whatsapp.com/channel/0029VaJmgrrEQIaone0J3a1s"><i class="fab fa-whatsapp"></i>واتساپ</a>
+    <a href="https://t.me/erfanvocal"><i class="fab fa-telegram-plane"></i>تلگرام</a>
+    <a href="https://instagram.com/eneivl"><i class="fab fa-instagram"></i>اینستاگرام</a>
+    <a href="https://www.google.com/maps/place/@/data=!4m2!3m1!1s0x3f920685817b3c6b:0xed87611b0b224792"><i class="fas fa-map-marker-alt"></i>لوکیشن من</a>
+    <a href="https://docs.google.com/forms/d/e/1FAIpQLSfkf0Ub4tCw-ysY375--BPMlNWqOzv29KcNWQFOFIkb-gK_7A/viewform?usp=header"><i class="fas fa-list"></i>فرم اطلاعات شما</a>
   </div>
 
-  <div class="form-box">
-    <input type="text" placeholder="نام و نام خانوادگی">
+  <!-- فرم ارسال واتساپ -->
+  <div class="form-container">
+    <input class="input-box" type="text" id="name" placeholder="نام و نام خانوادگی">
+    <input class="input-box" type="tel" id="phone" placeholder="شماره تماس" inputmode="numeric">
+    <input class="input-box" type="text" id="instagram" placeholder="آیدی اینستاگرام">
+
+    <button class="whatsapp-button" onclick="sendWhatsAppMessage()">
+      <i class="fab fa-whatsapp"></i>ارسال در واتساپ
+    </button>
   </div>
 
-  <div class="form-box">
-    <input type="tel" placeholder="شماره تماس" inputmode="numeric" pattern="[0-9]*">
-  </div>
+  <script>
+    function sendWhatsAppMessage() {
+      const name = document.getElementById('name').value.trim();
+      const phone = document.getElementById('phone').value.trim();
+      const instagram = document.getElementById('instagram').value.trim();
 
-  <div class="form-box">
-    <input type="text" placeholder="آیدی اینستاگرام">
-  </div>
+      const message =
+        `سلام عرفان جان\nمن ${name} هستم\nشماره تماس : ${phone}\nآیدی اینستاگرام : ${instagram}`;
 
-  <button class="whatsapp-btn">
-    <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" alt="WhatsApp">
-    ارسال در واتساپ
-  </button>
+      const encodedMessage = encodeURIComponent(message);
+      const whatsappURL = `https://wa.me/989212982911?text=${encodedMessage}`;
+      window.open(whatsappURL, '_blank');
+    }
+  </script>
 
 </body>
 </html>
