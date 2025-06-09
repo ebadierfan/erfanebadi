@@ -1,0 +1,117 @@
+
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>کارت ویزیت عرفان عبادی</title>
+  <link href="https://fonts.googleapis.com/css2?family=Lalezar&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: 'Lalezar', cursive;
+      background-color: #000;
+      color: #90ee90;
+      text-align: center;
+      overflow-x: hidden;
+    }
+    .container {
+      max-width: 400px;
+      margin: auto;
+      padding: 20px;
+    }
+    .profile-pic {
+      width: 160px;
+      height: 160px;
+      border-radius: 50%;
+      border: 6px solid #90ee90;
+      object-fit: cover;
+      margin: 0 auto 20px;
+      display: block;
+    }
+    .name {
+      font-size: 32px;
+      margin-bottom: 20px;
+    }
+    .contact-link {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 10px;
+      background-color: transparent;
+      color: #90ee90;
+      font-size: 20px;
+      margin: 10px 0;
+      text-decoration: none;
+    }
+    .contact-link i {
+      font-size: 24px;
+      color: #90ee90;
+    }
+    .form-input {
+      width: 100%;
+      padding: 10px;
+      margin: 10px 0;
+      border-radius: 10px;
+      border: none;
+      font-family: 'Lalezar';
+      font-size: 18px;
+      text-align: center;
+      color: #90ee90;
+      background-color: #111;
+    }
+    .whatsapp-btn {
+      background-color: #25d366;
+      color: black;
+      border: none;
+      border-radius: 12px;
+      font-size: 20px;
+      padding: 12px 20px;
+      width: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 8px;
+      font-family: 'Lalezar';
+    }
+    .whatsapp-btn i {
+      color: black;
+      font-size: 24px;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAApQAAAKUCAYAAAC6z6g8AAEAAElEQVR4nOz9d5Rk933di35Oqpyrc+6enp6EwQwGGGCQSVEkRRIU" alt="عرفان عبادی" class="profile-pic">
+    <div class="name">عرفان عبادی</div>
+    <a class="contact-link" href="tel:09212982911"><i class="bi bi-telephone-fill"></i>شماره تماس</a>
+    <a class="contact-link" href="https://wa.me/989212982911"><i class="bi bi-whatsapp"></i>واتساپ</a>
+    <a class="contact-link" href="https://t.me/mrerfanebadi"><i class="bi bi-telegram"></i>تلگرام</a>
+    <a class="contact-link" href="https://instagram.com/eneivl"><i class="bi bi-instagram"></i>اینستاگرام</a>
+    <a class="contact-link" href="https://www.google.com/maps/place/@/data=!4m2!3m1!1s0x3f920685817b3c6b:0xed87611b0b224792"><i class="bi bi-geo-alt-fill"></i>لوکیشن من</a>
+    <a class="contact-link" href="https://docs.google.com/forms/d/e/1FAIpQLSfkf0Ub4tCw-ysY375--BPMlNWqOzv29KcNWQFOFIkb-gK_7A/viewform?usp=header"><i class="bi bi-card-text"></i>فرم اطلاعات شما</a>
+
+    <form id="form">
+      <input class="form-input" type="text" id="name" placeholder="نام و نام خانوادگی" required>
+      <input class="form-input" type="tel" id="phone" placeholder="شماره تماس" required>
+      <input class="form-input" type="text" id="instagram" placeholder="آیدی اینستاگرام">
+      <button type="button" class="whatsapp-btn" onclick="sendWhatsApp()">
+        <i class="bi bi-whatsapp"></i>ارسال در واتساپ
+      </button>
+    </form>
+  </div>
+
+  <script>
+    function sendWhatsApp() {
+      const name = document.getElementById('name').value;
+      const phone = document.getElementById('phone').value;
+      const instagram = document.getElementById('instagram').value;
+      const message = `سلام عرفان جان\nمن ${name} هستم\nشماره تماس : ${phone}\nآیدی اینستاگرام : ${instagram}`;
+      const url = `https://wa.me/989212982911?text=${encodeURIComponent(message)}`;
+      window.open(url, '_blank');
+    }
+  </script>
+</body>
+</html>
