@@ -1,115 +1,92 @@
+
 <!DOCTYPE html>
 <html lang="fa" dir="rtl">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>کارت ویزیت عرفان عبادی</title>
+  <meta charset="UTF-8">
+  <title>کارت ویزیت دیجیتال</title>
   <link href="https://fonts.googleapis.com/css2?family=Lalezar&display=swap" rel="stylesheet">
   <style>
     body {
       margin: 0;
-      background-color: #000;
+      background-color: black;
+      color: #00FF84;
       font-family: 'Lalezar', cursive;
-      color: #00FF90;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
       text-align: center;
-      padding: 20px;
+      padding: 30px 10px;
     }
+
     .profile-pic {
       width: 140px;
       height: 140px;
-      border: 3px solid #00FF90;
       border-radius: 50%;
-      background-image: url("data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wBDAAgGBgcGBQgHBwcJCQgKDBQNDAsLDBkSEw8UHRofHh0aHBwgJC4nICIsIxwcKDcpLDAxNygxHyc9PDc6OyswMjcBCwsLDw4PHBERHTIoIygwMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjL/wAARCAEsA7QDASIAAhEBAxEB/8QAHQAAAgIDAQEBAAAAAAAAAAAAAAYEBQcCAwEICf/EAEUQAAIBAwMCBAMFBQQIBwAAAAECAwAEEQUhBhIxQVETImFxgRQjM0JygZEUQlKxwdHxFyQzcoKSoqLxFjRDZIKjo8L/xAAYAQEBAQEBAAAAAAAAAAAAAAAAAQIDBP/EACIRAQEAAgIDAAMBAQEAAAAAAAAAAAECEQMhEjEEQRMiMf/aAAwDAQACEAMQAAAB7mQgQAn2EUCVCEiGIUC1+x68YmREHGuLnZTadWQ2e/UF3rUqNoOTG+zKq2hhPtYwPG2OBtdj+yLP00Vhcy8llqAXz5gzh6oFmiH4nPjWTjfuZ6QDNH7ZTKbFdGCbX4WxrUuQQM2Snm2pVy4I4hHCZro26icNEOo+wMRsp2WcOV3lvLIsvuvZ5hEyQ1V8MCgBHK9lA4XpKUToFWdvhbA26YDlAhdldRt/FQliFHYHUqApms3WOSnOrcNBUSW3Wc3efJ2QIk5n5HTHgtz3YoW9M16jcb0dE9ZNYklByKoNe4z3JtCjYIfSTzQ+ZSpCCBCY+ZHOqfNVJ4z6RJ3nT7qaGu8ArWQCoAouMaV88R4HfTGoDr1bpGrXcklmCGdRgYDRKojS1Ae4bX2cFssYqDXVbc1BoRQhlQvle7lOaKjSn8yxzKIgWm09Tn6hZJ08OWhSwVzX1FwzOMg5QFLqfopk2+lWHJqfJyr5fWopJzWHSlrRLpcTjkXasUOW+p3RZ5UsndUbpRJ5nXtL3LgMJTHGIo7J6nZan0hUp3Yul04l7qeH3XdITTyS5ZG9QYB7NjcJaqk9+M9ExMSZ4KSBoc4E3hGyAAHOAI5OCIIjjjzCCCNCKQQSEJJJxAAAAAGgAAAxGIiIAR//Z");
+      border: 4px solid #00FF84;
+      margin: 20px auto;
+      background-image: url("data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wBDAAgGBgcGBQgHBwcJCQgKDBQNDAsLDBkSEw8UHRofHh0aH...");
       background-size: cover;
       background-position: center;
-      margin-bottom: 10px;
     }
+
     h1 {
-      font-size: 24px;
-      margin: 10px 0;
+      margin: 10px 0 30px;
+      font-size: 26px;
     }
+
     .link {
       margin: 10px 0;
-      font-size: 18px;
+      font-size: 20px;
     }
-    .link a {
-      color: #00FF90;
-      text-decoration: none;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      gap: 8px;
-    }
+
     .link i {
-      font-size: 22px;
+      margin-left: 8px;
     }
+
+    .form-container {
+      margin-top: 30px;
+    }
+
     input {
-      width: 90%;
-      padding: 10px;
+      display: block;
+      width: 80%;
       margin: 10px auto;
-      border: 2px solid #00FF90;
-      border-radius: 12px;
-      background: black;
-      color: #00FF90;
+      padding: 10px;
+      border: 2px solid #00FF84;
+      border-radius: 10px;
+      background-color: transparent;
+      color: #00FF84;
       font-family: 'Lalezar', cursive;
       font-size: 16px;
-      text-align: center;
     }
-    input::placeholder {
-      color: #00FF90;
-      text-align: center;
-    }
-    .btn {
-      background-color: #00FF90;
+
+    .send-button {
+      background-color: #00FF84;
       color: black;
-      font-family: 'Lalezar', cursive;
-      border: none;
-      padding: 12px 24px;
-      border-radius: 16px;
       font-size: 18px;
-      margin-top: 10px;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      gap: 8px;
+      font-family: 'Lalezar', cursive;
+      padding: 12px 30px;
+      border: none;
+      border-radius: 20px;
+      margin-top: 20px;
+      cursor: pointer;
     }
   </style>
-  <script>
-    function sendToWhatsApp() {
-      const name = document.getElementById("name").value;
-      const phone = document.getElementById("phone").value;
-      const instagram = document.getElementById("instagram").value;
-      const message = `سلام عرفان جان\nمن ${name} هستم\nشماره تماس : ${phone}\nآیدی اینستاگرام : ${instagram}`;
-      const encodedMsg = encodeURIComponent(message);
-      window.open(`https://wa.me/?text=${encodedMsg}`, "_blank");
-    }
-  </script>
-  <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+  <script src="https://kit.fontawesome.com/af562cdd56.js" crossorigin="anonymous"></script>
 </head>
 <body>
-
   <div class="profile-pic"></div>
   <h1>عرفان عبادی</h1>
 
-  <div class="link"><a href="tel:09212982911"><i class="fas fa-phone"></i>شماره تماس</a></div>
-  <div class="link"><a href="https://whatsapp.com/channel/0029VaJmgrrEQIaone0J3a1s" target="_blank"><i class="fab fa-whatsapp"></i>واتساپ</a></div>
-  <div class="link"><a href="https://t.me/erfanvocal" target="_blank"><i class="fab fa-telegram"></i>تلگرام</a></div>
-  <div class="link"><a href="https://instagram.com/eneivl" target="_blank"><i class="fab fa-instagram"></i>اینستاگرام</a></div>
-  <div class="link"><a href="https://www.google.com/maps/place/@/data=!4m2!3m1!1s0x3f920685817b3c6b:0xed87611b0b224792" target="_blank"><i class="fas fa-map-marker-alt"></i>لوکیشن من</a></div>
-  <div class="link"><a href="https://docs.google.com/forms/d/e/1FAIpQLSfkf0Ub4tCw-ysY375--BPMlNWqOzv29KcNWQFOFIkb-gK_7A/viewform?usp=header" target="_blank"><i class="fas fa-list"></i>فرم اطلاعات شما</a></div>
+  <div class="link"><i class="fas fa-phone"></i> شماره تماس</div>
+  <div class="link"><i class="fab fa-whatsapp"></i> واتساپ</div>
+  <div class="link"><i class="fab fa-telegram"></i> تلگرام</div>
+  <div class="link"><i class="fab fa-instagram"></i> اینستاگرام</div>
+  <div class="link"><i class="fas fa-map-marker-alt"></i> لوکیشن من</div>
+  <div class="link"><i class="fas fa-address-card"></i> فرم اطلاعات شما</div>
 
-  <br><br>
-
-  <input id="name" type="text" placeholder="نام و نام خانوادگی" />
-  <input id="phone" type="tel" placeholder="شماره تماس" pattern="[0-9]*" inputmode="numeric"/>
-  <input id="instagram" type="text" placeholder="آیدی اینستاگرام" />
-
-  <button class="btn" onclick="sendToWhatsApp()">
-    ارسال در واتساپ <i class="fab fa-whatsapp"></i>
-  </button>
-
+  <div class="form-container">
+    <input type="text" placeholder="نام و نام خانوادگی">
+    <input type="text" placeholder="شماره تماس">
+    <input type="text" placeholder="آیدی اینستاگرام">
+    <button class="send-button">ارسال در واتساپ</button>
+  </div>
 </body>
 </html>
