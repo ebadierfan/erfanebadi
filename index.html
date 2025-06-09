@@ -1,112 +1,119 @@
 <!DOCTYPE html>
 <html lang="fa" dir="rtl">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>کارت ویزیت عرفان عبادی</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Erfan Profile</title>
   <link href="https://fonts.googleapis.com/css2?family=Lalezar&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
   <style>
     body {
-      margin: 0;
-      background: #000;
+      background-color: #000;
+      color: #00ff88;
       font-family: 'Lalezar', cursive;
-      color: #66ff99;
       text-align: center;
-      padding: 20px;
+      margin: 0;
+      padding: 0;
     }
+
     .profile-img {
       width: 150px;
       height: 150px;
       border-radius: 50%;
-      border: 4px solid #66ff99;
-      object-fit: cover;
-      margin: 20px auto;
-      display: block;
+      border: 4px solid #00ff88;
+      margin: 20px auto 10px;
+      background-image: url('data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wBDAAgGBgcGBQgHBwcJCQgKDBQNDAsLDBkSEw8UHRofHh0aHBwgJC4nICIsIxwcKDcpLDAxNDQ0Hyc5PTgyPC4zNDL/2wBDAQkJCQwLDBgNDRgyIRwhMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjL/wAARCAKAAoADASIAAhEBAxEB/8QAHwAAAQUBAQEBAQEAAAAAAAAAAAECAwQFBgcICQoL/8QAtRAAAgEDAwIEAwUF');
+      background-size: cover;
+      background-position: center;
     }
+
     h1 {
       font-size: 28px;
-      margin-bottom: 30px;
+      margin: 10px 0;
     }
-    .link {
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      margin: 12px auto;
-      color: #66ff99;
-      text-decoration: none;
+
+    .icon-list {
       font-size: 20px;
-      gap: 10px;
+      line-height: 2;
     }
-    .form-section {
-      margin-top: 30px;
+
+    .icon-list i {
+      margin-left: 10px;
     }
-    input {
-      display: block;
-      width: 90%;
-      max-width: 320px;
+
+    .form-box {
       margin: 10px auto;
-      padding: 12px;
-      background: #000;
-      color: #66ff99;
-      border: 2px solid #66ff99;
+      width: 80%;
+      max-width: 300px;
+      background-color: transparent;
+      border: 2px solid #00ff88;
       border-radius: 12px;
-      font-family: 'Lalezar', cursive;
+      padding: 12px;
+      color: #aaa;
       font-size: 18px;
       text-align: center;
     }
-    .whatsapp-btn {
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      background-color: #66ff99;
-      color: #000;
-      font-family: 'Lalezar', cursive;
+
+    .form-box input {
+      background-color: transparent;
       border: none;
-      border-radius: 14px;
-      padding: 14px 24px;
-      font-size: 20px;
-      cursor: pointer;
-      margin: 20px auto;
+      outline: none;
+      color: #fff;
+      text-align: center;
+      font-size: 16px;
+      width: 100%;
+      font-family: 'Lalezar', cursive;
     }
-    .whatsapp-btn i {
-      margin-left: 10px;
+
+    .whatsapp-btn {
+      margin-top: 20px;
+      background-color: #00ff88;
       color: #000;
+      font-size: 22px;
+      font-family: 'Lalezar', cursive;
+      padding: 12px 24px;
+      border: none;
+      border-radius: 16px;
+      display: inline-flex;
+      align-items: center;
+      gap: 10px;
+    }
+
+    .whatsapp-btn img {
+      width: 22px;
+      height: 22px;
     }
   </style>
 </head>
 <body>
-  <img class="profile-img" src="data:image/jpeg;base64,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" alt="Erfan Profile">
+
+  <div class="profile-img"></div>
   <h1>عرفان عبادی</h1>
 
-  <a class="link" href="tel:09212982911"><i class="fas fa-phone"></i>شماره تماس</a>
-  <a class="link" href="https://wa.me/989212982911" target="_blank"><i class="fab fa-whatsapp"></i>واتساپ</a>
-  <a class="link" href="https://t.me/mrerfanebadi" target="_blank"><i class="fab fa-telegram"></i>تلگرام</a>
-  <a class="link" href="https://instagram.com/eneivl" target="_blank"><i class="fab fa-instagram"></i>اینستاگرام</a>
-  <a class="link" href="https://www.google.com/maps/place/@/data=!4m2!3m1!1s0x3f920685817b3c6b:0xed87611b0b224792" target="_blank"><i class="fas fa-map-marker-alt"></i>لوکیشن من</a>
-  <a class="link" href="https://docs.google.com/forms/d/e/1FAIpQLSfkf0Ub4tCw-ysY375--BPMlNWqOzv29KcNWQFOFIkb-gK_7A/viewform?usp=header" target="_blank"><i class="fas fa-list"></i>فرم اطلاعات شما</a>
-
-  <div class="form-section">
-    <input type="text" id="name" placeholder="نام و نام خانوادگی">
-    <input type="tel" id="phone" placeholder="شماره تماس">
-    <input type="text" id="instagram" placeholder="آیدی اینستاگرام">
-
-    <button class="whatsapp-btn" onclick="sendToWhatsApp()">
-      <i class="fab fa-whatsapp"></i>ارسال در واتساپ
-    </button>
+  <div class="icon-list">
+    <div><i>📞</i>شماره تماس</div>
+    <div><i>🟢</i>واتساپ</div>
+    <div><i>✈️</i>تلگرام</div>
+    <div><i>📸</i>اینستاگرام</div>
+    <div><i>📍</i>لوکیشن من</div>
+    <div><i>📋</i>فرم اطلاعات شما</div>
   </div>
 
-  <script>
-    function sendToWhatsApp() {
-      const name = document.getElementById('name').value;
-      const phone = document.getElementById('phone').value;
-      const insta = document.getElementById('instagram').value;
+  <div class="form-box">
+    <input type="text" placeholder="نام و نام خانوادگی">
+  </div>
 
-      const msg = `سلام عرفان جان\nمن ${name} هستم\nشماره تماس : ${phone}\nآیدی اینستاگرام : ${insta}`;
-      const encodedMsg = encodeURIComponent(msg);
-      const url = `https://wa.me/989212982911?text=${encodedMsg}`;
-      window.open(url, '_blank');
-    }
-  </script>
+  <div class="form-box">
+    <input type="tel" placeholder="شماره تماس" inputmode="numeric" pattern="[0-9]*">
+  </div>
+
+  <div class="form-box">
+    <input type="text" placeholder="آیدی اینستاگرام">
+  </div>
+
+  <button class="whatsapp-btn">
+    <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" alt="WhatsApp">
+    ارسال در واتساپ
+  </button>
+
 </body>
 </html>
