@@ -2,125 +2,111 @@
 <html lang="fa" dir="rtl">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Erfan Ebadi</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>کارت ویزیت عرفان عبادی</title>
   <link href="https://fonts.googleapis.com/css2?family=Lalezar&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
   <style>
     body {
-      background: #000;
-      font-family: 'Lalezar', sans-serif;
-      color: #90ee90;
       margin: 0;
-      padding: 0;
-      overflow-x: hidden;
+      background: #000;
+      font-family: 'Lalezar', cursive;
+      color: #66ff99;
       text-align: center;
+      padding: 20px;
     }
-    .profile-pic {
-      width: 160px;
-      height: 160px;
+    .profile-img {
+      width: 150px;
+      height: 150px;
       border-radius: 50%;
-      border: 4px solid #90ee90;
+      border: 4px solid #66ff99;
       object-fit: cover;
-      margin: 30px auto 20px;
+      margin: 20px auto;
       display: block;
     }
     h1 {
-      font-size: 32px;
-      margin-bottom: 20px;
+      font-size: 28px;
+      margin-bottom: 30px;
     }
     .link {
-      margin: 10px auto;
       display: flex;
       align-items: center;
       justify-content: center;
-      font-size: 22px;
-      color: #90ee90;
+      margin: 12px auto;
+      color: #66ff99;
+      text-decoration: none;
+      font-size: 20px;
       gap: 10px;
     }
-    .link svg {
-      width: 24px;
-      height: 24px;
-      fill: #90ee90;
-    }
-    form {
+    .form-section {
       margin-top: 30px;
     }
     input {
-      width: 80%;
-      max-width: 300px;
-      padding: 12px;
-      border-radius: 10px;
-      margin: 10px auto;
       display: block;
-      border: none;
-      font-size: 16px;
+      width: 90%;
+      max-width: 320px;
+      margin: 10px auto;
+      padding: 12px;
+      background: #000;
+      color: #66ff99;
+      border: 2px solid #66ff99;
+      border-radius: 12px;
+      font-family: 'Lalezar', cursive;
+      font-size: 18px;
       text-align: center;
     }
     .whatsapp-btn {
-      background: #25d366;
-      color: black;
-      font-size: 20px;
-      padding: 12px 20px;
-      border-radius: 12px;
-      margin-top: 15px;
-      border: none;
       display: flex;
       align-items: center;
       justify-content: center;
-      gap: 10px;
+      background-color: #66ff99;
+      color: #000;
+      font-family: 'Lalezar', cursive;
+      border: none;
+      border-radius: 14px;
+      padding: 14px 24px;
+      font-size: 20px;
       cursor: pointer;
+      margin: 20px auto;
     }
-    .whatsapp-btn svg {
-      width: 22px;
-      height: 22px;
-      fill: black;
+    .whatsapp-btn i {
+      margin-left: 10px;
+      color: #000;
     }
   </style>
 </head>
 <body>
-
-  <!-- تصویر -->
-  <img src="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQEASABIAAD... (ادامه base64 عکس خودت که دارم کامل وارد می‌کنم)" class="profile-pic" alt="Erfan"/>
-
+  <img class="profile-img" src="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wCEAAkGBxISEhUREhIVFhUXFRUVFRUVFRUVFRUVFRUWFhUVFRUYHSggGBolGxUVITEhJSkrLi4uFx8zODMtNygtLisBCgoKDg0OGhAQGy0lICYtLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLf/AABEIAKMBNwMBIgACEQEDEQH/xAAbAAEAAgMBAQAAAAAAAAAAAAAAAwQBAgUGB//EAD4QAAIBAwIDBQYEBQMCBwAAAAECAwAEEQUhBhIxQVEiYXGBkTKBkaEHFSNSUrHR8BVCYvAVQ4KCouEzY3Ojsv/EABoBAAIDAQEAAAAAAAAAAAAAAAMEAAECBQb/xAAzEQABAwMCAwUGBQUBAAAAAAAAAQIDEQQSITEFE0FRYXGBkaGx8CMiQsHR4fEjM1KC4SNS/9oADAMBAAIRAxEAPwD6oAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPVlAGgAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAB//2Q==" alt="Erfan Profile">
   <h1>عرفان عبادی</h1>
 
-  <div class="link"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M6.62 10.79a15.05 15.05 0 006.59 6.59l2.2-2.2a1 1 0 011.11-.27c1.21.49 2.53.76 3.88.76a1 1 0 011 1v3.61a1 1 0 01-1 1C10.79 22 2 13.21 2 2a1 1 0 011-1h3.61a1 1 0 011 1c0 1.35.27 2.67.76 3.88a1 1 0 01-.27 1.11l-2.2 2.2z"/></svg>شماره تماس</div>
+  <a class="link" href="tel:09212982911"><i class="fas fa-phone"></i>شماره تماس</a>
+  <a class="link" href="https://wa.me/989212982911" target="_blank"><i class="fab fa-whatsapp"></i>واتساپ</a>
+  <a class="link" href="https://t.me/mrerfanebadi" target="_blank"><i class="fab fa-telegram"></i>تلگرام</a>
+  <a class="link" href="https://instagram.com/eneivl" target="_blank"><i class="fab fa-instagram"></i>اینستاگرام</a>
+  <a class="link" href="https://www.google.com/maps/place/@/data=!4m2!3m1!1s0x3f920685817b3c6b:0xed87611b0b224792" target="_blank"><i class="fas fa-map-marker-alt"></i>لوکیشن من</a>
+  <a class="link" href="https://docs.google.com/forms/d/e/1FAIpQLSfkf0Ub4tCw-ysY375--BPMlNWqOzv29KcNWQFOFIkb-gK_7A/viewform?usp=header" target="_blank"><i class="fas fa-list"></i>فرم اطلاعات شما</a>
 
-  <div class="link"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32"><path d="M19.11 17.36a8.63 8.63 0 01-4.49-4.49l-1.1-2.49a.91.91 0 00-1.14-.5 9.69 9.69 0 00-4.3 3.11.91.91 0 00-.1 1.02 15.84 15.84 0 0012.63 8.69.91.91 0 001.02-.1 9.69 9.69 0 003.11-4.3.91.91 0 00-.5-1.14z"/></svg>واتساپ</div>
+  <div class="form-section">
+    <input type="text" id="name" placeholder="نام و نام خانوادگی">
+    <input type="text" id="phone" placeholder="شماره تماس">
+    <input type="text" id="instagram" placeholder="آیدی اینستاگرام">
 
-  <div class="link"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M22 4.01L2.01 12 7 13l1 5 3.16-3.16L17 20l5-16z"/></svg>تلگرام</div>
-
-  <div class="link"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M7 2C4.243 2 2 4.243 2 7v10c0 2.757 2.243 5 5 5h10c2.757 0 5-2.243 5-5V7c0-2.757-2.243-5-5-5H7zm5 5a5 5 0 110 10 5 5 0 010-10zm0 2.25a2.75 2.75 0 100 5.5 2.75 2.75 0 000-5.5z"/></svg>اینستاگرام</div>
-
-  <div class="link"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5S10.62 6.5 12 6.5s2.5 1.12 2.5 2.5S13.38 11.5 12 11.5z"/></svg>لوکیشن من</div>
-
-  <div class="link"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 4h16v2H4zM4 8h10v2H4zM4 12h16v2H4zM4 16h10v2H4z"/></svg>فرم اطلاعات شما</div>
-
-  <form id="infoForm">
-    <input type="text" id="name" placeholder="نام و نام خانوادگی" required />
-    <input type="text" id="phone" placeholder="شماره تماس" required />
-    <input type="text" id="instagram" placeholder="آیدی اینستاگرام" />
-    <button type="submit" class="whatsapp-btn">
-      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32"><path d="M19.11 17.36a8.63 8.63 0 01-4.49-4.49l-1.1-2.49a.91.91 0 00-1.14-.5 9.69 9.69 0 00-4.3 3.11.91.91 0 00-.1 1.02 15.84 15.84 0 0012.63 8.69.91.91 0 001.02-.1 9.69 9.69 0 003.11-4.3.91.91 0 00-.5-1.14z"/></svg>
-      ارسال در واتساپ
+    <button class="whatsapp-btn" onclick="sendToWhatsApp()">
+      <i class="fab fa-whatsapp"></i>ارسال در واتساپ
     </button>
-  </form>
+  </div>
 
   <script>
-    document.getElementById('infoForm').addEventListener('submit', function (e) {
-      e.preventDefault();
+    function sendToWhatsApp() {
       const name = document.getElementById('name').value;
       const phone = document.getElementById('phone').value;
-      const instagram = document.getElementById('instagram').value;
-      const message =
-        `سلام عرفان جان\n` +
-        `من ${name} هستم\n` +
-        `شماره تماس : ${phone}\n` +
-        `آیدی اینستاگرام : ${instagram}`;
-      const url = `https://wa.me/989212982911?text=${encodeURIComponent(message)}`;
-      window.open(url, '_blank');
-    });
-  </script>
+      const insta = document.getElementById('instagram').value;
 
+      const msg = `سلام عرفان جان\nمن ${name} هستم\nشماره تماس : ${phone}\nآیدی اینستاگرام : ${insta}`;
+      const encodedMsg = encodeURIComponent(msg);
+      const url = `https://wa.me/989212982911?text=${encodedMsg}`;
+      window.open(url, '_blank');
+    }
+  </script>
 </body>
 </html>
