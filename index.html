@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>عرفان عبادی - کارت ویزیت دیجیتال</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Lalezar&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <!-- Profile Section -->
+        <div class="profile-section">
+            <div class="profile-image">
+                <img src="profile.jpg" alt="عرفان عبادی" id="profileImg">
+            </div>
+            <h1 class="name">عرفان عبادی</h1>
+        </div>
+
+        <!-- Contact Links -->
+        <div class="contact-links">
+            <a href="tel:+989212982911" class="contact-item">
+                <img src="phone-icon.png" alt="تماس" class="icon">
+                <span>شماره تماس</span>
+            </a>
+
+            <a href="https://whatsapp.com/channel/0029VaJmgrrEQIaone0J3a1s" target="_blank" class="contact-item">
+                <img src="whatsapp-icon.png" alt="واتساپ" class="icon">
+                <span>واتساپ</span>
+            </a>
+
+            <a href="https://t.me/erfanvocal" target="_blank" class="contact-item">
+                <img src="telegram-icon.png" alt="تلگرام" class="icon">
+                <span>تلگرام</span>
+            </a>
+
+            <a href="https://Instagram.com/eneivl" target="_blank" class="contact-item">
+                <img src="instagram-icon.png" alt="اینستاگرام" class="icon">
+                <span>اینستاگرام</span>
+            </a>
+
+            <a href="https://www.google.com/maps/place/@/data=!4m2!3m1!1s0x3f920685817b3c6b:0xed87611b0b224792" target="_blank" class="contact-item">
+                <img src="location-icon.png" alt="لوکیشن" class="icon">
+                <span>لوکیشن من</span>
+            </a>
+
+            <a href="https://docs.google.com/forms/d/e/1FAIpQLSfkf0Ub4tCw-ysY375--BPMlNWqOzv29KcNWQFOFIkb-gK_7A/viewform?usp=header" target="_blank" class="contact-item">
+                <img src="form-icon.png" alt="فرم" class="icon">
+                <span>فرم اطلاعات شما</span>
+            </a>
+        </div>
+
+        <!-- Contact Form -->
+        <div class="contact-form">
+            <div class="form-group">
+                <input type="text" id="fullName" placeholder="نام و نام خانوادگی" class="form-input">
+            </div>
+            
+            <div class="form-group">
+                <input type="tel" id="phoneNumber" placeholder="شماره تماس" class="form-input" inputmode="numeric">
+            </div>
+            
+            <div class="form-group">
+                <input type="text" id="instagramId" placeholder="آیدی اینستاگرام" class="form-input">
+            </div>
+
+            <button onclick="sendWhatsApp()" class="whatsapp-btn">
+                <img src="whatsapp-black-icon.png" alt="واتساپ" class="btn-icon">
+                <span>ارسال در واتساپ</span>
+            </button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
