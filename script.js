@@ -23,16 +23,40 @@ function sendWhatsApp() {
 document.addEventListener("DOMContentLoaded", () => {
   const phoneInput = document.getElementById("phoneNumber")
   const instagramInput = document.getElementById("instagramId")
+  const fullNameInput = document.getElementById("fullName")
 
-  // Phone number validation
+  // Phone input - only numbers
   phoneInput.addEventListener("input", function (e) {
     this.value = this.value.replace(/[^0-9]/g, "")
   })
 
-  // Force English keyboard for Instagram input
+  // Instagram input - force English keyboard and clear placeholder
   instagramInput.addEventListener("focus", function () {
-    this.setAttribute("inputmode", "latin")
-    this.setAttribute("lang", "en")
+    this.setAttribute("dir", "ltr")
+    this.style.textAlign = "left"
+  })
+
+  instagramInput.addEventListener("blur", function () {
+    if (!this.value) {
+      this.removeAttribute("dir")
+      this.style.textAlign = "center"
+    }
+  })
+
+  // Clear placeholder behavior for all inputs
+  const inputs = [fullNameInput, phoneInput, instagramInput]
+  inputs.forEach((input) => {
+    const originalPlaceholder = input.placeholder
+
+    input.addEventListener("focus", function () {
+      this.placeholder = ""
+    })
+
+    input.addEventListener("blur", function () {
+      if (!this.value) {
+        this.placeholder = originalPlaceholder
+      }
+    })
   })
 
   // Add touch feedback for mobile
