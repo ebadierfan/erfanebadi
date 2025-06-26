@@ -1,3 +1,41 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Lalezar", cursive;
+  background-color: #000000;
+  color: #00ff88;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0;
+  direction: rtl;
+  overflow: hidden;
+}
+
+.container {
+  width: 100%;
+  max-width: 375px;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+  padding: 15px 15px;
+}
+
+/* Profile Section */
+.profile-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 15px;
+}
+
 .profile-image {
   width: 170px;
   height: 170px;
@@ -9,6 +47,12 @@
   justify-content: center;
 }
 
+.profile-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
 .name {
   font-size: 36px;
   font-weight: 400;
@@ -17,6 +61,7 @@
   margin: 0;
 }
 
+/* Contact Links */
 .contact-links {
   display: flex;
   flex-direction: column;
@@ -38,6 +83,24 @@
   width: 100%;
 }
 
+.contact-item:hover {
+  opacity: 0.8;
+}
+
+.icon {
+  width: 28px;
+  height: 28px;
+}
+
+/* Contact Form */
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  width: 100%;
+  align-items: center;
+}
+
 .form-input {
   width: 100%;
   max-width: 320px;
@@ -57,6 +120,11 @@
   color: rgba(0, 255, 136, 0.4);
   opacity: 1;
   font-family: "Lalezar", cursive;
+}
+
+.form-input:focus {
+  border-color: #00ff88;
+  box-shadow: 0 0 15px rgba(0, 255, 136, 0.3);
 }
 
 .form-input:focus::placeholder {
@@ -81,28 +149,50 @@
   max-width: 320px;
 }
 
-.container {
-  width: 100%;
-  max-width: 375px;
-  height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: space-evenly;
-  padding: 15px 15px;
+.whatsapp-btn:hover {
+  background-color: #00e67a;
+  transform: translateY(-2px);
 }
 
-.profile-section {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 15px;
+.btn-icon {
+  width: 24px;
+  height: 24px;
 }
 
-.contact-form {
-  display: flex;
-  flex-direction: column;
-  gap: 12px;
-  width: 100%;
-  align-items: center;
+/* Mobile Responsive */
+@media (max-width: 480px) {
+  .container {
+    padding: 15px 10px;
+  }
+
+  .profile-image {
+    width: 150px;
+    height: 150px;
+  }
+
+  .name {
+    font-size: 32px;
+  }
+
+  .contact-item {
+    font-size: 18px;
+  }
+
+  .contact-links {
+    gap: 18px;
+  }
+
+  .form-input {
+    padding: 12px 20px;
+    font-size: 15px;
+  }
+
+  .whatsapp-btn {
+    padding: 12px 25px;
+    font-size: 16px;
+  }
+
+  .contact-form {
+    gap: 10px;
+  }
 }
