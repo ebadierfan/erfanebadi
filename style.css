@@ -127,12 +127,14 @@ body {
   transition: all 0.3s ease;
 }
 
+/* طبق توضیحات اسکرین‌شات: متن اول خاکستری */
 .form-input::placeholder {
   color: rgba(128, 128, 128, 0.8);
   opacity: 1;
   font-family: "Lalezar", cursive;
 }
 
+/* طبق توضیحات اسکرین‌شات: متن‌های چین (شماره تلفن و اینستاگرام) همرنگ خط اول */
 .phone-input::placeholder {
   color: #00ff88;
   opacity: 1;
@@ -152,6 +154,7 @@ body {
   opacity: 0;
 }
 
+/* طبق توضیحات اسکرین‌شات: کادر مستقیم سبز */
 .whatsapp-btn {
   background-color: #00ff88;
   color: #000000;
