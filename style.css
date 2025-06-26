@@ -13,7 +13,7 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 8px;
+  padding: 5px;
   direction: rtl;
   overflow: hidden;
 }
@@ -26,8 +26,8 @@ body {
   flex-direction: column;
   align-items: center;
   justify-content: space-between;
-  gap: 5px; /* کاهش بیشتر فاصله */
-  padding: 10px 0;
+  gap: 0; /* حذف gap اضافی */
+  padding: 8px 0;
 }
 
 /* Profile Section */
@@ -35,13 +35,14 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 12px; /* کاهش فاصله */
+  gap: 8px; /* کاهش فاصله */
   flex-shrink: 0;
+  margin-bottom: 5px;
 }
 
 .profile-image {
-  width: 110px;
-  height: 110px;
+  width: 120px;
+  height: 120px;
   border-radius: 50%;
   border: 3px solid #00ff88;
   overflow: hidden;
@@ -57,7 +58,7 @@ body {
 }
 
 .name {
-  font-size: 24px;
+  font-size: 26px;
   font-weight: 400;
   text-align: center;
   color: #00ff88;
@@ -68,20 +69,21 @@ body {
 .contact-links {
   display: flex;
   flex-direction: column;
-  gap: 5px; /* کاهش فاصله بین آیتم‌ها */
+  gap: 2px; /* کاهش شدید فاصله بین لوگوها */
   width: 100%;
   flex-shrink: 0;
+  margin: 5px 0;
 }
 
 .contact-item {
   display: flex;
   align-items: center;
   justify-content: center;
-  gap: 12px;
+  gap: 8px; /* کاهش فاصله بین لوگو و متن */
   text-decoration: none;
   color: #00ff88;
-  font-size: 16px;
-  padding: 4px 0; /* کاهش padding */
+  font-size: 17px;
+  padding: 2px 0; /* کاهش padding */
   transition: opacity 0.3s ease;
 }
 
@@ -90,37 +92,39 @@ body {
 }
 
 .icon {
-  width: 22px;
-  height: 22px;
-  /* حذف فیلتر تا لوگوها نمایش داده شوند */
+  width: 24px;
+  height: 24px;
+  /* حذف کامل فیلتر تا لوگوها نمایش داده شوند */
 }
 
 /* Contact Form */
 .contact-form {
   display: flex;
   flex-direction: column;
-  gap: 6px; /* کاهش فاصله */
+  gap: 4px; /* کاهش فاصله بین کادرها */
   width: 100%;
   flex-shrink: 0;
-  margin-top: 5px;
+  margin-top: 0; /* حذف margin اضافی */
 }
 
 .form-group {
   width: 100%;
+  margin: 0; /* حذف margin اضافی */
 }
 
 .form-input {
   width: 100%;
-  padding: 12px 18px;
+  padding: 10px 16px;
   border: 2px solid #00ff88;
   border-radius: 25px;
   background-color: transparent;
   color: #00ff88;
   font-family: "Lalezar", cursive;
-  font-size: 14px;
+  font-size: 15px;
   text-align: center;
   outline: none;
   transition: all 0.3s ease;
+  margin: 0; /* حذف margin اضافی */
 }
 
 .form-input::placeholder {
@@ -140,7 +144,7 @@ body {
   color: #000000;
   border: none;
   border-radius: 25px;
-  padding: 12px 25px;
+  padding: 10px 20px;
   font-family: "Lalezar", cursive;
   font-size: 16px;
   display: flex;
@@ -150,7 +154,7 @@ body {
   cursor: pointer;
   transition: all 0.3s ease;
   width: 100%;
-  margin-top: 5px;
+  margin: 2px 0 0 0; /* حذف margin اضافی */
 }
 
 .whatsapp-btn:hover {
@@ -161,45 +165,54 @@ body {
 .btn-icon {
   width: 20px;
   height: 20px;
+  /* نمایش لوگو واتساپ مشکی روی دکمه */
   filter: brightness(0) saturate(100%) invert(0%) sepia(0%) saturate(0%) hue-rotate(0deg) brightness(0%) contrast(100%);
 }
 
 /* Responsive Design */
 @media (max-width: 480px) {
   .container {
-    padding: 8px;
-    gap: 4px;
+    padding: 5px;
+    gap: 0;
+  }
+
+  .profile-section {
+    gap: 6px;
+    margin-bottom: 3px;
   }
 
   .profile-image {
-    width: 100px;
-    height: 100px;
+    width: 110px;
+    height: 110px;
   }
 
   .name {
-    font-size: 22px;
-  }
-
-  .contact-item {
-    font-size: 15px;
-    padding: 3px 0;
+    font-size: 24px;
   }
 
   .contact-links {
-    gap: 4px;
+    gap: 1px;
+    margin: 3px 0;
+  }
+
+  .contact-item {
+    font-size: 16px;
+    padding: 1px 0;
+    gap: 6px;
   }
 
   .form-input {
-    padding: 10px 16px;
-    font-size: 13px;
-  }
-
-  .whatsapp-btn {
-    padding: 10px 20px;
+    padding: 8px 14px;
     font-size: 14px;
   }
 
+  .whatsapp-btn {
+    padding: 8px 16px;
+    font-size: 15px;
+  }
+
   .contact-form {
-    gap: 5px;
+    gap: 3px;
+    margin-top: 0;
   }
 }
