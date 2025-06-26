@@ -25,9 +25,9 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: space-between;
-  gap: 15px;
-  padding: 20px 0;
+  justify-content: space-evenly; /* تغییر از space-between به space-evenly */
+  gap: 8px; /* کاهش gap */
+  padding: 15px 0; /* کاهش padding */
 }
 
 /* Profile Section */
@@ -35,12 +35,12 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 20px;
+  gap: 15px; /* کاهش gap */
 }
 
 .profile-image {
-  width: 120px;
-  height: 120px;
+  width: 100px; /* کاهش اندازه */
+  height: 100px; /* کاهش اندازه */
   border-radius: 50%;
   border: 3px solid #00ff88;
   overflow: hidden;
@@ -56,7 +56,7 @@ body {
 }
 
 .name {
-  font-size: 24px;
+  font-size: 22px; /* کاهش اندازه فونت */
   font-weight: 400;
   text-align: center;
   color: #00ff88;
@@ -67,7 +67,7 @@ body {
 .contact-links {
   display: flex;
   flex-direction: column;
-  gap: 12px;
+  gap: 8px; /* کاهش gap */
   width: 100%;
   flex-shrink: 0;
 }
@@ -79,36 +79,35 @@ body {
   gap: 15px;
   text-decoration: none;
   color: #00ff88;
-  font-size: 16px;
-  padding: 8px 0;
+  font-size: 15px; /* کاهش اندازه فونت */
+  padding: 6px 0; /* کاهش padding */
   transition: opacity 0.3s ease;
 }
 
 .icon {
   width: 24px;
   height: 24px;
-  filter: brightness(0) saturate(100%) invert(70%) sepia(89%) saturate(2000%) hue-rotate(90deg) brightness(118%)
-    contrast(119%);
+  /* حذف فیلتر - لوگوها به صورت طبیعی نمایش داده شوند */
 }
 
 /* Contact Form */
 .contact-form {
   display: flex;
   flex-direction: column;
-  gap: 12px;
+  gap: 8px; /* کاهش gap */
   width: 100%;
   flex-shrink: 0;
 }
 
 .form-input {
   width: 100%;
-  padding: 12px 18px;
+  padding: 10px 16px; /* کاهش padding */
   border: 2px solid #00ff88;
   border-radius: 25px;
   background-color: transparent;
   color: #00ff88;
   font-family: "Lalezar", cursive;
-  font-size: 14px;
+  font-size: 13px; /* کاهش اندازه فونت */
   text-align: center;
   outline: none;
   transition: all 0.3s ease;
@@ -116,7 +115,9 @@ body {
 
 .form-input::placeholder {
   color: #00ff88;
-  opacity: 0.7;
+  opacity: 0.6;
+  text-shadow: 0 0 8px rgba(0, 255, 136, 0.4);
+  font-weight: 300;
 }
 
 .form-input:focus {
@@ -129,13 +130,13 @@ body {
   color: #000000;
   border: none;
   border-radius: 25px;
-  padding: 12px 25px;
+  padding: 10px 20px; /* کاهش padding */
   font-family: "Lalezar", cursive;
-  font-size: 16px;
+  font-size: 14px; /* کاهش اندازه فونت */
   display: flex;
   align-items: center;
   justify-content: center;
-  gap: 10px;
+  gap: 8px;
   cursor: pointer;
   transition: all 0.3s ease;
   width: 100%;
