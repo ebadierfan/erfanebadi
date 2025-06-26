@@ -22,10 +22,17 @@ function sendWhatsApp() {
 // Auto-focus and input validation
 document.addEventListener("DOMContentLoaded", () => {
   const phoneInput = document.getElementById("phoneNumber")
+  const instagramInput = document.getElementById("instagramId")
 
+  // Phone number validation
   phoneInput.addEventListener("input", function (e) {
-    // Only allow numbers
     this.value = this.value.replace(/[^0-9]/g, "")
+  })
+
+  // Force English keyboard for Instagram input
+  instagramInput.addEventListener("focus", function () {
+    this.setAttribute("inputmode", "latin")
+    this.setAttribute("lang", "en")
   })
 
   // Add touch feedback for mobile
