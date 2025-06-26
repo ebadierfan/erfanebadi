@@ -25,9 +25,10 @@ document.addEventListener("DOMContentLoaded", () => {
   const instagramInput = document.getElementById("instagramId")
   const fullNameInput = document.getElementById("fullName")
 
-  // Phone input - only numbers
+  // Phone input - only numbers and keep centered
   phoneInput.addEventListener("input", function (e) {
     this.value = this.value.replace(/[^0-9]/g, "")
+    this.style.textAlign = "center"
   })
 
   // Instagram input - force English keyboard and layout
