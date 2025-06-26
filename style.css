@@ -1,57 +1,12 @@
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-
-body {
-  font-family: "Lalezar", cursive;
-  background-color: #000000;
-  color: #00ff88;
-  height: 100vh;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  padding: 0;
-  direction: rtl;
-  overflow: hidden;
-}
-
-.container {
-  width: 100%;
-  max-width: 375px;
-  height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: space-between;
-  padding: 15px 10px;
-}
-
-/* Profile Section */
-.profile-section {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 15px;
-  flex-shrink: 0;
-}
-
 .profile-image {
-  width: 160px;
-  height: 160px;
+  width: 170px;
+  height: 170px;
   border-radius: 50%;
   border: 4px solid #00ff88;
   overflow: hidden;
   display: flex;
   align-items: center;
   justify-content: center;
-}
-
-.profile-image img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
 }
 
 .name {
@@ -62,74 +17,50 @@ body {
   margin: 0;
 }
 
-/* Contact Links */
 .contact-links {
   display: flex;
   flex-direction: column;
-  gap: 12px;
+  gap: 20px;
   width: 100%;
   align-items: center;
-  flex-shrink: 0;
 }
 
 .contact-item {
   display: flex;
   align-items: center;
   justify-content: center;
-  gap: 8px;
+  gap: 12px;
   text-decoration: none;
   color: #00ff88;
-  font-size: 18px;
+  font-size: 20px;
   padding: 0;
   transition: opacity 0.3s ease;
   width: 100%;
 }
 
-.contact-item:hover {
-  opacity: 0.8;
-}
-
-.icon {
-  width: 24px;
-  height: 24px;
-  color: #00ff88;
-  flex-shrink: 0;
-}
-
-/* Contact Form */
-.contact-form {
-  display: flex;
-  flex-direction: column;
-  gap: 8px;
-  width: 100%;
-  align-items: center;
-  flex-shrink: 0;
-}
-
 .form-input {
   width: 100%;
   max-width: 320px;
-  padding: 12px 20px;
+  padding: 15px 25px;
   border: 2px solid #00ff88;
   border-radius: 15px;
   background-color: transparent;
   color: #00ff88;
   font-family: "Lalezar", cursive;
-  font-size: 15px;
+  font-size: 16px;
   text-align: center;
   outline: none;
   transition: all 0.3s ease;
 }
 
 .form-input::placeholder {
-  color: #00ff88;
-  opacity: 0.4;
+  color: rgba(0, 255, 136, 0.4);
+  opacity: 1;
   font-family: "Lalezar", cursive;
 }
 
-.form-input:focus {
-  border-color: #00ff88;
-  box-shadow: 0 0 10px rgba(0, 255, 136, 0.3);
+.form-input:focus::placeholder {
+  opacity: 0;
 }
 
 .whatsapp-btn {
@@ -137,67 +68,41 @@ body {
   color: #000000;
   border: none;
   border-radius: 15px;
-  padding: 12px 25px;
+  padding: 15px 30px;
   font-family: "Lalezar", cursive;
-  font-size: 16px;
+  font-size: 18px;
   display: flex;
   align-items: center;
   justify-content: center;
-  gap: 8px;
+  gap: 12px;
   cursor: pointer;
   transition: all 0.3s ease;
   width: 100%;
   max-width: 320px;
-  margin-top: 4px;
 }
 
-.whatsapp-btn:hover {
-  background-color: #00e67a;
-  transform: translateY(-2px);
+.container {
+  width: 100%;
+  max-width: 375px;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+  padding: 15px 15px;
 }
 
-.btn-icon {
-  width: 20px;
-  height: 20px;
-  color: #000000;
-  flex-shrink: 0;
+.profile-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 15px;
 }
 
-/* Mobile Responsive */
-@media (max-width: 480px) {
-  .container {
-    padding: 10px 8px;
-  }
-
-  .profile-image {
-    width: 140px;
-    height: 140px;
-  }
-
-  .name {
-    font-size: 32px;
-  }
-
-  .contact-item {
-    font-size: 16px;
-    gap: 6px;
-  }
-
-  .contact-links {
-    gap: 10px;
-  }
-
-  .form-input {
-    padding: 10px 18px;
-    font-size: 14px;
-  }
-
-  .whatsapp-btn {
-    padding: 10px 20px;
-    font-size: 15px;
-  }
-
-  .contact-form {
-    gap: 6px;
-  }
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  width: 100%;
+  align-items: center;
 }
