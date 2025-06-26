@@ -30,10 +30,11 @@ document.addEventListener("DOMContentLoaded", () => {
     this.value = this.value.replace(/[^0-9]/g, "")
   })
 
-  // Instagram input - force English keyboard and clear placeholder
+  // Instagram input - force English keyboard and layout
   instagramInput.addEventListener("focus", function () {
     this.setAttribute("dir", "ltr")
     this.style.textAlign = "left"
+    this.setAttribute("lang", "en")
   })
 
   instagramInput.addEventListener("blur", function () {
