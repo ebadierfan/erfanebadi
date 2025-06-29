@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>عرفان عبادی - کارت ویزیت دیجیتال</title>
+    <link href="https://fonts.googleapis.com/css2?family=Lalezar&display=swap" rel="stylesheet">
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body { 
+            background: black; 
+            color: white; 
+            font-family: 'Lalezar', cursive;
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 20px;
+        }
+        .container {
+            width: 100%;
+            max-width: 400px;
+            text-align: center;
+        }
+        .profile {
+            width: 120px;
+            height: 120px;
+            border-radius: 50%;
+            border: 3px solid #22c55e;
+            margin: 0 auto 20px;
+            background: #333;
+        }
+        .name {
+            color: #22c55e;
+            font-size: 2rem;
+            margin-bottom: 30px;
+        }
+        .card {
+            border: 2px solid #22c55e;
+            border-radius: 20px;
+            padding: 30px 20px;
+            margin-bottom: 20px;
+        }
+        .btn {
+            display: block;
+            width: 100%;
+            background: transparent;
+            color: #22c55e;
+            border: none;
+            padding: 15px;
+            margin: 10px 0;
+            border-radius: 10px;
+            font-family: 'Lalezar', cursive;
+            font-size: 1.1rem;
+            cursor: pointer;
+            transition: all 0.3s;
+        }
+        .btn:hover {
+            background: rgba(34, 197, 94, 0.1);
+        }
+        .input {
+            width: 100%;
+            background: transparent;
+            border: 2px solid #22c55e;
+            border-radius: 15px;
+            padding: 15px;
+            color: #22c55e;
+            font-family: 'Lalezar', cursive;
+            text-align: center;
+            margin: 10px 0;
+        }
+        .send-btn {
+            background: #22c55e;
+            color: black;
+            font-weight: bold;
+        }
+        .send-btn:disabled {
+            opacity: 0.5;
+            cursor: not-allowed;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="profile"></div>
+        <h1 class="name">عرفان عبادی</h1>
+        
+        <div class="card">
+            <button class="btn" onclick="window.open('tel:09212982911')">📞 شماره تماس</button>
+            <button class="btn" onclick="window.open('https://whatsapp.com/channel/0029VaJmgrrEQIaone0J3a1s')">💬 واتساپ</button>
+            <button class="btn" onclick="window.open('https://t.me/erfanvocal')">📱 تلگرام</button>
+            <button class="btn" onclick="window.open('https://instagram.com/eneivl')">📷 اینستاگرام</button>
+            <button class="btn" onclick="window.open('https://www.google.com/maps/place/@/data=!4m2!3m1!1s0x3f920685817b3c6b:0xed87611b0b224792')">📍 لوکیشن من</button>
+            <button class="btn" onclick="window.open('https://docs.google.com/forms/d/e/1FAIpQLSfkf0Ub4tCw-ysY375--BPMlNWqOzv29KcNWQFOFIkb-gK_7A/viewform')">📝 فرم اطلاعات شما</button>
+        </div>
+
+        <input type="text" class="input" id="name" placeholder="نام و نام خانوادگی">
+        <input type="tel" class="input" id="phone" placeholder="شماره تماس">
+        <input type="text" class="input" id="instagram" placeholder="آیدی اینستاگرام">
+        
+        <button class="btn send-btn" id="sendBtn" onclick="sendWhatsApp()">💬 ارسال در واتساپ</button>
+    </div>
+
+    <script>
+        function sendWhatsApp() {
+            const name = document.getElementById('name').value;
+            const phone = document.getElementById('phone').value;
+            const instagram = document.getElementById('instagram').value;
+            
+            if (!name || !phone || !instagram) {
+                alert('لطفاً همه فیلدها را پر کنید');
+                return;
+            }
+            
+            const message = `سلام عرفان جان
+من ${name} هستم
+شماره تماس : ${phone}
+آیدی اینستاگرام : ${instagram}`;
+            
+            const encodedMessage = encodeURIComponent(message);
+            window.open(`https://wa.me/989212982911?text=${encodedMessage}`);
+        }
+        
+        // Enable/disable send button
+        const inputs = document.querySelectorAll('.input');
+        const sendBtn = document.getElementById('sendBtn');
+        
+        inputs.forEach(input => {
+            input.addEventListener('input', () => {
+                const allFilled = Array.from(inputs).every(inp => inp.value.trim());
+                sendBtn.disabled = !allFilled;
+            });
+        });
+    </script>
+</body>
+</html>
