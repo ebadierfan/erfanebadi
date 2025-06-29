@@ -6,131 +6,292 @@
     <title>عرفان عبادی - کارت ویزیت دیجیتال</title>
     <link href="https://fonts.googleapis.com/css2?family=Lalezar&display=swap" rel="stylesheet">
     <style>
-        * { margin: 0; padding: 0; box-sizing: border-box; }
-        body { 
-            background: black; 
-            color: white; 
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
             font-family: 'Lalezar', cursive;
+        }
+
+        body {
+            background: linear-gradient(135deg, #000000 0%, #1a1a1a 100%);
             min-height: 100vh;
             display: flex;
             align-items: center;
             justify-content: center;
             padding: 20px;
+            color: white;
         }
+
         .container {
             width: 100%;
             max-width: 400px;
-            text-align: center;
+            background: rgba(0, 0, 0, 0.8);
+            border-radius: 20px;
+            padding: 30px 20px;
+            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.5);
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(34, 197, 94, 0.3);
         }
-        .profile {
+
+        .profile-section {
+            text-align: center;
+            margin-bottom: 30px;
+        }
+
+        .profile-image {
             width: 120px;
             height: 120px;
             border-radius: 50%;
             border: 3px solid #22c55e;
+            padding: 3px;
             margin: 0 auto 20px;
-            background: #333;
-        }
-        .name {
-            color: #22c55e;
-            font-size: 2rem;
-            margin-bottom: 30px;
-        }
-        .card {
-            border: 2px solid #22c55e;
-            border-radius: 20px;
-            padding: 30px 20px;
-            margin-bottom: 20px;
-        }
-        .btn {
             display: block;
-            width: 100%;
-            background: transparent;
+            object-fit: cover;
+        }
+
+        .profile-name {
+            font-size: 28px;
             color: #22c55e;
+            margin-bottom: 10px;
+            font-weight: bold;
+        }
+
+        .contact-section {
+            border: 2px solid #22c55e;
+            border-radius: 15px;
+            padding: 20px;
+            margin-bottom: 25px;
+        }
+
+        .contact-btn {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 12px;
+            width: 100%;
+            padding: 12px;
+            margin-bottom: 15px;
+            background: transparent;
             border: none;
-            padding: 15px;
-            margin: 10px 0;
+            color: #22c55e;
+            font-size: 18px;
             border-radius: 10px;
-            font-family: 'Lalezar', cursive;
-            font-size: 1.1rem;
             cursor: pointer;
-            transition: all 0.3s;
+            transition: all 0.3s ease;
+            text-decoration: none;
         }
-        .btn:hover {
+
+        .contact-btn:hover {
             background: rgba(34, 197, 94, 0.1);
+            transform: translateY(-2px);
         }
+
+        .contact-btn:last-child {
+            margin-bottom: 0;
+        }
+
+        .contact-icon {
+            width: 24px;
+            height: 24px;
+        }
+
+        .input-section {
+            margin-bottom: 25px;
+        }
+
         .input {
             width: 100%;
+            padding: 15px;
+            margin-bottom: 15px;
             background: transparent;
             border: 2px solid #22c55e;
             border-radius: 15px;
-            padding: 15px;
             color: #22c55e;
-            font-family: 'Lalezar', cursive;
+            font-size: 16px;
             text-align: center;
-            margin: 10px 0;
+            font-family: 'Lalezar', cursive;
         }
+
+        .input::placeholder {
+            color: rgba(34, 197, 94, 0.7);
+        }
+
+        .input:focus {
+            outline: none;
+            border-color: #16a34a;
+            box-shadow: 0 0 10px rgba(34, 197, 94, 0.3);
+        }
+
         .send-btn {
+            width: 100%;
+            padding: 15px;
             background: #22c55e;
             color: black;
+            border: none;
+            border-radius: 15px;
+            font-size: 18px;
             font-weight: bold;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 10px;
+            font-family: 'Lalezar', cursive;
         }
+
+        .send-btn:hover:not(:disabled) {
+            background: #16a34a;
+            transform: translateY(-2px);
+        }
+
         .send-btn:disabled {
             opacity: 0.5;
             cursor: not-allowed;
+        }
+
+        .whatsapp-icon {
+            width: 24px;
+            height: 24px;
+        }
+
+        /* Responsive Design */
+        @media (max-width: 480px) {
+            .container {
+                margin: 10px;
+                padding: 20px 15px;
+            }
+            
+            .profile-name {
+                font-size: 24px;
+            }
+            
+            .contact-btn {
+                font-size: 16px;
+                padding: 10px;
+            }
+            
+            .input {
+                font-size: 14px;
+                padding: 12px;
+            }
+        }
+
+        /* Animation */
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        .container {
+            animation: fadeIn 0.6s ease-out;
         }
     </style>
 </head>
 <body>
     <div class="container">
-        <div class="profile"></div>
-        <h1 class="name">عرفان عبادی</h1>
-        
-        <div class="card">
-            <button class="btn" onclick="window.open('tel:09212982911')">📞 شماره تماس</button>
-            <button class="btn" onclick="window.open('https://whatsapp.com/channel/0029VaJmgrrEQIaone0J3a1s')">💬 واتساپ</button>
-            <button class="btn" onclick="window.open('https://t.me/erfanvocal')">📱 تلگرام</button>
-            <button class="btn" onclick="window.open('https://instagram.com/eneivl')">📷 اینستاگرام</button>
-            <button class="btn" onclick="window.open('https://www.google.com/maps/place/@/data=!4m2!3m1!1s0x3f920685817b3c6b:0xed87611b0b224792')">📍 لوکیشن من</button>
-            <button class="btn" onclick="window.open('https://docs.google.com/forms/d/e/1FAIpQLSfkf0Ub4tCw-ysY375--BPMlNWqOzv29KcNWQFOFIkb-gK_7A/viewform')">📝 فرم اطلاعات شما</button>
+        <!-- Profile Section -->
+        <div class="profile-section">
+            <img src="erfan-profile.jpg" alt="عرفان عبادی" class="profile-image">
+            <h1 class="profile-name">عرفان عبادی</h1>
         </div>
 
-        <input type="text" class="input" id="name" placeholder="نام و نام خانوادگی">
-        <input type="tel" class="input" id="phone" placeholder="شماره تماس">
-        <input type="text" class="input" id="instagram" placeholder="آیدی اینستاگرام">
-        
-        <button class="btn send-btn" id="sendBtn" onclick="sendWhatsApp()">💬 ارسال در واتساپ</button>
+        <!-- Contact Options -->
+        <div class="contact-section">
+            <a href="tel:+989212982911" class="contact-btn">
+                <img src="phone-icon.png" alt="تلفن" class="contact-icon">
+                <span>شماره تماس</span>
+            </a>
+
+            <a href="https://whatsapp.com/channel/0029VaJmgrrEQIaone0J3a1s" target="_blank" class="contact-btn">
+                <img src="whatsapp-icon.png" alt="واتساپ" class="contact-icon">
+                <span>واتساپ</span>
+            </a>
+
+            <a href="https://t.me/erfanvocal" target="_blank" class="contact-btn">
+                <img src="telegram-icon.png" alt="تلگرام" class="contact-icon">
+                <span>تلگرام</span>
+            </a>
+
+            <a href="https://instagram.com/eneivl" target="_blank" class="contact-btn">
+                <img src="instagram-icon.png" alt="اینستاگرام" class="contact-icon">
+                <span>اینستاگرام</span>
+            </a>
+
+            <a href="https://www.google.com/maps/place/@/data=!4m2!3m1!1s0x3f920685817b3c6b:0xed87611b0b224792" target="_blank" class="contact-btn">
+                <img src="location-icon.png" alt="موقعیت" class="contact-icon">
+                <span>لوکیشن من</span>
+            </a>
+
+            <a href="https://docs.google.com/forms/d/e/1FAIpQLSfkf0Ub4tCw-ysY375--BPMlNWqOzv29KcNWQFOFIkb-gK_7A/viewform?usp=header" target="_blank" class="contact-btn">
+                <img src="form-icon.png" alt="فرم" class="contact-icon">
+                <span>فرم اطلاعات شما</span>
+            </a>
+        </div>
+
+        <!-- Input Fields -->
+        <div class="input-section">
+            <input type="text" id="name" class="input" placeholder="نام و نام خانوادگی">
+            <input type="tel" id="phone" class="input" placeholder="شماره تماس">
+            <input type="text" id="instagram" class="input" placeholder="آیدی اینستاگرام">
+        </div>
+
+        <!-- Send Button -->
+        <button id="sendBtn" class="send-btn" onclick="sendWhatsApp()" disabled>
+            <img src="whatsapp-button-icon.png" alt="واتساپ" class="whatsapp-icon">
+            <span>ارسال در واتساپ</span>
+        </button>
     </div>
 
     <script>
         function sendWhatsApp() {
-            const name = document.getElementById('name').value;
-            const phone = document.getElementById('phone').value;
-            const instagram = document.getElementById('instagram').value;
+            const name = document.getElementById('name').value.trim();
+            const phone = document.getElementById('phone').value.trim();
+            const instagram = document.getElementById('instagram').value.trim();
             
             if (!name || !phone || !instagram) {
                 alert('لطفاً همه فیلدها را پر کنید');
                 return;
             }
             
+            // Fixed message template with +98 phone number format
             const message = `سلام عرفان جان
 من ${name} هستم
 شماره تماس : ${phone}
 آیدی اینستاگرام : ${instagram}`;
             
             const encodedMessage = encodeURIComponent(message);
-            window.open(`https://wa.me/989212982911?text=${encodedMessage}`);
+            // Updated WhatsApp number with +98 format
+            window.open(`https://wa.me/989212982911?text=${encodedMessage}`, '_blank');
         }
         
-        // Enable/disable send button
+        // Enable/disable send button based on input validation
         const inputs = document.querySelectorAll('.input');
         const sendBtn = document.getElementById('sendBtn');
         
+        function checkInputs() {
+            const allFilled = Array.from(inputs).every(input => input.value.trim() !== '');
+            sendBtn.disabled = !allFilled;
+        }
+        
         inputs.forEach(input => {
-            input.addEventListener('input', () => {
-                const allFilled = Array.from(inputs).every(inp => inp.value.trim());
-                sendBtn.disabled = !allFilled;
+            input.addEventListener('input', checkInputs);
+            input.addEventListener('keypress', function(e) {
+                if (e.key === 'Enter' && !sendBtn.disabled) {
+                    sendWhatsApp();
+                }
             });
         });
+        
+        // Initial check
+        checkInputs();
     </script>
 </body>
 </html>
