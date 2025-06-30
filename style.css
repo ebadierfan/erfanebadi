@@ -100,7 +100,15 @@ body {
 .icon {
   width: 24px;
   height: 24px;
-  /* حذف تمام فیلترها تا لوگوهای اصلی نمایش داده شوند */
+  border-radius: 6px; /* گوشه‌های گرد */
+  border: 1px solid #4ade80; /* حاشیه سبز روشن برای لوگوهای سیاه */
+  padding: 2px; /* فاصله داخلی */
+  transition: all 0.2s ease;
+}
+
+.icon:hover {
+  border-color: #86efac;
+  transform: scale(1.1);
 }
 
 /* Form Section */
@@ -168,7 +176,15 @@ body {
 .button-icon {
   width: 24px;
   height: 24px;
-  /* حذف فیلتر تا لوگو اصلی واتساپ نمایش داده شود */
+  border-radius: 6px; /* گوشه‌های گرد */
+  border: 1px solid #000000; /* حاشیه سیاه برای لوگوی سبز واتساپ */
+  padding: 2px; /* فاصله داخلی */
+  transition: all 0.2s ease;
+}
+
+.button-icon:hover {
+  border-color: #333333;
+  transform: scale(1.1);
 }
 
 /* Mobile Responsive */
@@ -192,6 +208,11 @@ body {
 
   .whatsapp-button {
     font-size: 16px;
+  }
+
+  .icon, .button-icon {
+    width: 20px;
+    height: 20px;
   }
 }
 
