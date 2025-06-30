@@ -50,13 +50,10 @@ function sendWhatsApp() {
     return
   }
 
-  // Create message
+  // Create message (اصلاح فاصله‌ها)
   const message = `سلام عرفان جان
-
 من ${formData.name} هستم
-
 شماره تماس : ${formData.phone}
-
 آیدی اینستاگرام : ${formData.instagram}`
 
   // Create WhatsApp URL
