@@ -1,30 +1,47 @@
-# Recreate UI screenshot
+# 💳 کارت ویزیت دیجیتال عرفان عبادی
 
-*Automatically synced with your [v0.dev](https://v0.dev) deployments*
+یک کارت ویزیت دیجیتال مدرن و حرفه‌ای با طراحی ریسپانسیو و قابلیت‌های تعاملی
 
-[![Deployed on Vercel](https://img.shields.io/badge/Deployed%20on-Vercel-black?style=for-the-badge&logo=vercel)](https://vercel.com/erfanvocal-1538s-projects/v0-recreate-ui-screenshot)
-[![Built with v0](https://img.shields.io/badge/Built%20with-v0.dev-black?style=for-the-badge)](https://v0.dev/chat/projects/LeNgH5VyUuM)
+## 🌟 ویژگی‌ها
 
-## Overview
+- ✅ **طراحی ریسپانسیو** - سازگار با تمام دستگاه‌ها
+- ✅ **فرم تماس هوشمند** - ارسال مستقیم پیام به واتساپ
+- ✅ **لینک‌های مستقیم** - دسترسی آسان به شبکه‌های اجتماعی
+- ✅ **انیمیشن‌های روان** - تجربه کاربری بهتر
+- ✅ **فونت فارسی** - استفاده از فونت لاله‌زار
+- ✅ **طراحی تاریک** - ظاهر مدرن و چشم‌نواز
+- ✅ **بهینه‌سازی موبایل** - نسبت ابعاد 9:16
 
-This repository will stay in sync with your deployed chats on [v0.dev](https://v0.dev).
-Any changes you make to your deployed app will be automatically pushed to this repository from [v0.dev](https://v0.dev).
+## 🚀 مشاهده زنده
 
-## Deployment
+**[مشاهده کارت ویزیت](https://ebadierfan.github.io/erfanebadi/)**
 
-Your project is live at:
+## 📱 پیش‌نمایش
 
-**[https://vercel.com/erfanvocal-1538s-projects/v0-recreate-ui-screenshot](https://vercel.com/erfanvocal-1538s-projects/v0-recreate-ui-screenshot)**
+کارت ویزیت شامل بخش‌های زیر است:
+- 👤 عکس پروفایل و نام
+- 📞 اطلاعات تماس و شبکه‌های اجتماعی
+- 📝 فرم تماس سریع
+- 💬 ارسال مستقیم پیام واتساپ
 
-## Build your app
+## 🛠️ تکنولوژی‌های استفاده شده
 
-Continue building your app on:
+- **HTML5** - ساختار صفحه
+- **CSS3** - طراحی و انیمیشن‌ها
+- **JavaScript** - عملکردهای تعاملی
+- **GitHub Pages** - میزبانی رایگان
 
-**[https://v0.dev/chat/projects/LeNgH5VyUuM](https://v0.dev/chat/projects/LeNgH5VyUuM)**
+## 📋 نحوه استفاده
 
-## How It Works
+### برای بازدیدکنندگان:
+1. وارد لینک کارت ویزیت شوید
+2. روی هر لینک کلیک کنید تا به صفحه مربوطه منتقل شوید
+3. فرم تماس را پر کنید و پیام خود را ارسال کنید
 
-1. Create and modify your project using [v0.dev](https://v0.dev)
-2. Deploy your chats from the v0 interface
-3. Changes are automatically pushed to this repository
-4. Vercel deploys the latest version from this repository
+### برای توسعه‌دهندگان:
+```bash
+# کلون کردن پروژه
+git clone https://github.com/ebadierfan/erfanebadi.git
+
+# باز کردن در مرورگر
+open index.html
