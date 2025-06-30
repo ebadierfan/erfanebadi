@@ -46,7 +46,7 @@ body {
 
 .profile-image-container {
   position: relative;
-  padding: 4px; /* فاصله بین عکس و حاشیه */
+  padding: 8px; /* فاصله بیشتر مثل استوری اینستاگرام */
   border: 3px solid #4ade80;
   border-radius: 50%;
   background-color: #000000;
@@ -151,8 +151,8 @@ body {
 
 .whatsapp-button {
   width: 100%;
-  background: linear-gradient(135deg, #25D366, #128C7E); /* رنگ اصلی واتساپ */
-  color: #ffffff;
+  background-color: #25D366; /* رنگ دقیق واتساپ */
+  color: #000000;
   border: none;
   padding: 16px;
   border-radius: 16px;
@@ -168,7 +168,7 @@ body {
 }
 
 .whatsapp-button:hover {
-  background: linear-gradient(135deg, #128C7E, #25D366);
+  background-color: #128C7E; /* رنگ تیره‌تر واتساپ هنگام هاور */
   transform: translateY(-2px);
 }
 
@@ -181,14 +181,13 @@ body {
   width: 24px;
   height: 24px;
   border-radius: 6px;
-  border: 1px solid rgba(255, 255, 255, 0.3); /* حاشیه شفاف سفید */
+  border: 1px solid #000000; /* حاشیه سیاه */
   padding: 2px;
   transition: all 0.2s ease;
-  filter: brightness(1.2); /* روشن‌تر کردن لوگو */
 }
 
 .button-icon:hover {
-  border-color: rgba(255, 255, 255, 0.5);
+  border-color: #333333;
   transform: scale(1.1);
 }
 
@@ -223,6 +222,10 @@ body {
   .profile-image {
     width: 100px;
     height: 100px;
+  }
+
+  .profile-image-container {
+    padding: 6px; /* فاصله کمتر در موبایل */
   }
 }
 
