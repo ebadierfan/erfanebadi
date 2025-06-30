@@ -46,15 +46,19 @@ body {
 
 .profile-image-container {
   position: relative;
+  padding: 4px; /* فاصله بین عکس و حاشیه */
+  border: 3px solid #4ade80;
+  border-radius: 50%;
+  background-color: #000000;
 }
 
 .profile-image {
   width: 120px;
   height: 120px;
   border-radius: 50%;
-  border: 3px solid #4ade80;
   object-fit: cover;
   transition: transform 0.3s ease;
+  display: block;
 }
 
 .profile-image:hover {
@@ -100,9 +104,9 @@ body {
 .icon {
   width: 24px;
   height: 24px;
-  border-radius: 6px; /* گوشه‌های گرد */
-  border: 1px solid #4ade80; /* حاشیه سبز روشن برای لوگوهای سیاه */
-  padding: 2px; /* فاصله داخلی */
+  border-radius: 6px;
+  border: 1px solid #4ade80;
+  padding: 2px;
   transition: all 0.2s ease;
 }
 
@@ -147,8 +151,8 @@ body {
 
 .whatsapp-button {
   width: 100%;
-  background-color: #4ade80;
-  color: #000000;
+  background: linear-gradient(135deg, #25D366, #128C7E); /* رنگ اصلی واتساپ */
+  color: #ffffff;
   border: none;
   padding: 16px;
   border-radius: 16px;
@@ -164,26 +168,27 @@ body {
 }
 
 .whatsapp-button:hover {
-  background-color: #22c55e;
+  background: linear-gradient(135deg, #128C7E, #25D366);
   transform: translateY(-2px);
 }
 
 .whatsapp-button:focus {
   outline: none;
-  box-shadow: 0 0 0 3px rgba(74, 222, 128, 0.3);
+  box-shadow: 0 0 0 3px rgba(37, 211, 102, 0.3);
 }
 
 .button-icon {
   width: 24px;
   height: 24px;
-  border-radius: 6px; /* گوشه‌های گرد */
-  border: 1px solid #000000; /* حاشیه سیاه برای لوگوی سبز واتساپ */
-  padding: 2px; /* فاصله داخلی */
+  border-radius: 6px;
+  border: 1px solid rgba(255, 255, 255, 0.3); /* حاشیه شفاف سفید */
+  padding: 2px;
   transition: all 0.2s ease;
+  filter: brightness(1.2); /* روشن‌تر کردن لوگو */
 }
 
 .button-icon:hover {
-  border-color: #333333;
+  border-color: rgba(255, 255, 255, 0.5);
   transform: scale(1.1);
 }
 
@@ -213,6 +218,11 @@ body {
   .icon, .button-icon {
     width: 20px;
     height: 20px;
+  }
+
+  .profile-image {
+    width: 100px;
+    height: 100px;
   }
 }
 
