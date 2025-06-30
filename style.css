@@ -100,8 +100,7 @@ body {
 .icon {
   width: 24px;
   height: 24px;
-  /* حذف پس‌زمینه و تبدیل به شفاف */
-  filter: brightness(0) saturate(100%) invert(64%) sepia(98%) saturate(464%) hue-rotate(86deg) brightness(118%) contrast(119%);
+  /* حذف تمام فیلترها تا لوگوهای اصلی نمایش داده شوند */
 }
 
 /* Form Section */
@@ -169,8 +168,7 @@ body {
 .button-icon {
   width: 24px;
   height: 24px;
-  /* تبدیل لوگو واتساپ به مشکی برای نمایش روی پس‌زمینه سبز */
-  filter: brightness(0) saturate(100%) invert(0%) sepia(0%) saturate(0%) hue-rotate(0deg) brightness(0%) contrast(100%);
+  /* حذف فیلتر تا لوگو اصلی واتساپ نمایش داده شود */
 }
 
 /* Mobile Responsive */
