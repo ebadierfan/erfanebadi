@@ -50,7 +50,7 @@ function sendWhatsApp() {
     return
   }
 
-  // Create message (اصلاح فاصله‌ها)
+  // Create message (فقط یک فاصله قبل از هستم)
   const message = `سلام عرفان جان
 من ${formData.name} هستم
 شماره تماس : ${formData.phone}
